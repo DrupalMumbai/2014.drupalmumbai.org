@@ -1,0 +1,2548 @@
+@import "../../g_raph_/css/12cols.css";
+@import "../../g_raph_/css/html5reset.css";
+@import "../../g_raph_/css/regions.css";
+@import "../../g_raph_/css/styleguide.css";
+.front #header #header-middle #header-middle-inner .view-leuven2013-sponsors .view-empty {
+  text-align: left;
+}
+.front #preface-wrapper #preface-top .view-display-id-block_2 .views-row {
+  margin: 0 5px;
+}
+.front #preface-wrapper #preface-top .view-display-id-block_2 .views-row.views-row-first {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.front #preface-wrapper #preface-top .view-display-id-block_2 .views-row.views-row-last {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.front #page-title {
+  display: none;
+}
+#header #header-middle #header-middle-inner {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+#header #header-bottom {
+  background: #3993c0;
+}
+#header #header-bottom #header-bottom-inner {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+#preface-wrapper {
+  background: #fff;
+  -webkit-box-shadow: inset 0px 11px 8px -5px #cccccc, inset 0px -11px 8px -5px #dddddd;
+  -moz-box-shadow: inset 0px 11px 8px -5px #cccccc, inset 0px -11px 8px -5px #dddddd;
+  box-shadow: inset 0px 11px 8px -5px #cccccc, inset 0px -11px 8px -5px #dddddd;
+}
+#preface-wrapper #preface-inner {
+  display: block;
+  float: none;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+#preface-wrapper #preface-inner #preface-top {
+  margin: 25px auto;
+}
+#footer {
+  background: #282828;
+}
+#footer #footer-inner {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+#footer #footer-inner #footer-bottom .sponsor-bronze-footer {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+#footer #footer-inner #footer-bottom .sponsor-bronze-footer img {
+  -webkit-filter: grayscale(1) contrast(0.5) blur(0.25px);
+  /* Google Chrome & Safari 6+ */
+  filter: url(filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+}
+#footer #footer-inner #footer-bottom .sponsor-bronze-footer img:hover {
+  -webkit-filter: grayscale(0) blur(0) contrast(1);
+  filter: none;
+}
+#sidebar-second .block {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+#sidebar-second .block h2 {
+  border: none;
+  text-align: center;
+}
+#sidebar-second .block .view-leuven2013-sponsors .view-empty a {
+  font-size: 16px;
+}
+.view-leuven2013-sponsors ul {
+  margin: 0;
+  padding: 0;
+}
+.view-leuven2013-sponsors ul li {
+  list-style: none;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+.view-leuven2013-sponsors ul li img {
+  width: 100%;
+}
+.view-leuven2013-sponsors .view-empty {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.view-leuven2013-sponsors .view-empty a {
+  color: #fff;
+  font-size: 28px;
+  background: #ff9430;
+  padding: 5px 30px;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.view-leuven2013-sponsors .view-empty a:hover {
+  background: #3993c0;
+  text-decoration: none;
+}
+#block-views-leuven2013-sponsors-block-10,
+#block-views-leuven2013-sponsors-block-11,
+#block-views-leuven2013-sponsors-block-12,
+#block-views-leuven2013-sponsors-block-13 {
+  clear: both;
+  float: none;
+  width: 100%;
+}
+#content .view-leuven2013-sponsors .sponsor-inline-title {
+  float: left;
+  line-height: 1em;
+  margin: 0 5px 0 0;
+  vertical-align: top;
+}
+#content .view-leuven2013-sponsors .sponsor-overview-silver .sponsor-inline-title,
+#content .view-leuven2013-sponsors .sponsor-overview-gold .sponsor-inline-title {
+  padding: 15px 0 0 25px;
+}
+#content .view-leuven2013-sponsors .sponsor-overview-silver .field-name-field-sponsor-body,
+#content .view-leuven2013-sponsors .sponsor-overview-gold .field-name-field-sponsor-body {
+  padding: 15px 0 0 25px;
+}
+#content .view-leuven2013-sponsors .sponsor-overview-silver .field-name-field-sponsor-body p,
+#content .view-leuven2013-sponsors .sponsor-overview-gold .field-name-field-sponsor-body p {
+  margin: 0;
+}
+#content .view-leuven2013-sponsors .sponsor-overview-bronze,
+#content .view-leuven2013-sponsors .sponsor-overview-activity {
+  float: left;
+  width: 33%;
+}
+#content .view-leuven2013-sponsors .sponsor-overview-bronze .node-sponsor,
+#content .view-leuven2013-sponsors .sponsor-overview-activity .node-sponsor {
+  padding: 0 10px;
+}
+#content .ds-3col.node-session.node-teaser,
+#content .ds-3col.node-schedule-item.node-teaser {
+  width: 100%;
+  margin: 30px 0 30px 0;
+}
+#content .ds-3col.node-session.node-teaser .group-middle,
+#content .ds-3col.node-schedule-item.node-teaser .group-middle {
+  margin: 0 2%;
+  width: 55%;
+}
+#content .ds-3col.node-session.node-teaser .group-middle h3,
+#content .ds-3col.node-schedule-item.node-teaser .group-middle h3 {
+  margin: 0 0 15px 0;
+}
+#content .ds-3col.node-session.node-teaser .group-right,
+#content .ds-3col.node-schedule-item.node-teaser .group-right {
+  width: 15%;
+  float: right;
+}
+#content .ds-3col.node-session.node-teaser .group-right .field-name-field-slot-datetime .field-label,
+#content .ds-3col.node-schedule-item.node-teaser .group-right .field-name-field-slot-datetime .field-label {
+  display: none;
+}
+#content .ds-3col.node-session.node-teaser .group-right h2,
+#content .ds-3col.node-schedule-item.node-teaser .group-right h2 {
+  font-size: 1.5em;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#content .ds-3col.node-schedule-item.node-teaser .group-middle {
+  margin: 0 !important;
+  text-align: center;
+  width: 84% !important;
+}
+#content .term-listing-heading .field-type-color-field-rgb {
+  float: left;
+  margin-right: 15px;
+}
+#content .term-listing-heading .field-type-color-field-rgb .field-item > div {
+  border-radius: 4px;
+}
+#content .term-listing-heading .field-name-title h2 {
+  line-height: 50px;
+}
+ul.call-to-action-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.call-to-action-list li {
+  margin: 25px 0;
+}
+ul.call-to-action-list li a {
+  color: #fff;
+  font-size: 28px;
+  background: #ff9430;
+  padding: 5px 30px;
+  text-align: center;
+  border-radius: 4px;
+}
+ul.call-to-action-list li a:hover {
+  background: #3993c0;
+  text-decoration: none;
+}
+.not-front #header-middle #header-middle-inner {
+  clear: both;
+  overflow: hidden;
+}
+.not-front #header-middle #header-middle-inner #block-leuven2013-general-banner-to-frontpage a.frontpage-banner-link {
+  background: url('../images/dcl-banner.png') no-repeat center center;
+  display: block;
+  height: 110px;
+  text-indent: -9999px;
+}
+.not-front #header-middle #header-middle-inner #block-views-leuven2013-sponsors-block-1 {
+  margin-top: 0;
+}
+.not-front #header-middle #header-middle-inner #block-views-leuven2013-sponsors-block-1.col6 {
+  width: 460px;
+}
+.not-front #header-middle #header-middle-inner #block-views-leuven2013-sponsors-block-1 a {
+  display: block;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  vertical-align: middle;
+}
+.not-front #header-middle #header-middle-inner #block-views-leuven2013-sponsors-block-1 a img {
+  vertical-align: middle;
+  width: 326px;
+}
+.node-sponsor .field-name-sponsor-level-rendered .sponsor-level-rendered {
+  font-size: 2em;
+  text-align: center;
+}
+.how-to-propose-session-step {
+  margin: 8px 0;
+}
+.how-to-propose-session-step .how-to-propose-session-step-count {
+  background: #3993c0;
+  border-radius: 5px 20px 5px;
+  color: #FFF;
+  display: inline-block;
+  font-size: 1.8em;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 15px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+}
+#block-views-leuven2013-news-block .view-leuven2013-news {
+  margin-left: 0;
+}
+#block-views-leuven2013-news-block-2 .view-leuven2013-news {
+  margin-right: 0;
+}
+.view-leuven2013-news img {
+  margin: 5px 15px 0 0;
+  float: left;
+}
+.view-leuven2013-news .field-name-title {
+  margin-bottom: 10px;
+}
+.view-leuven2013-news .field-name-post-date {
+  color: #888;
+  float: right;
+  font-size: 0.9em;
+  margin-top: 0;
+}
+#block-views-leuven2013-tracks-block {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+#block-views-leuven2013-tracks-block .view-leuven2013-tracks .view-content .views-row {
+  float: left;
+}
+#block-views-leuven2013-tracks-block .view-leuven2013-tracks .view-content .views-row .views-field-field-track-color-code {
+  float: left;
+  margin-right: 5px;
+}
+#block-views-leuven2013-tracks-block .view-leuven2013-tracks .view-content .views-row .views-field-field-track-color-code .field-content > div {
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+#block-views-leuven2013-tracks-block .view-leuven2013-tracks .view-content .views-row .views-field-name {
+  float: left;
+  margin-right: 15px;
+}
+.icon-experience-level .field-item {
+  text-align: center;
+  text-indent: -9999px;
+}
+.icon-experience-level.experience-level-1 .field-item {
+  background: url('../images/exp-beginner.png') no-repeat left top;
+}
+.icon-experience-level.experience-level-2 .field-item {
+  background: url('../images/exp-intermediate.png') no-repeat left top;
+}
+.icon-experience-level.experience-level-3 .field-item {
+  background: url('../images/exp-advanced.png') no-repeat left top;
+}
+#conf-program h2 {
+  border-bottom: 1px solid #ccc;
+  color: #ff9430;
+  font-size: 2.5em;
+  padding: 0 0 1em 0;
+  text-align: center;
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 980px) {
+  #block-views-leuven2013-news-block .view-leuven2013-news,
+  #block-views-leuven2013-news-block-2 .view-leuven2013-news {
+    margin: 0;
+  }
+  #preface-wrapper #preface-inner #preface-top {
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  .sponsor-silver,
+  .field-type-image {
+    text-align: center;
+  }
+  #content .view-leuven2013-sponsors .sponsor-overview-bronze,
+  #content .view-leuven2013-sponsors .sponsor-overview-activity {
+    width: 50%;
+  }
+  #content .view-leuven2013-sponsors .sponsor-overview-silver .group-left,
+  #content .view-leuven2013-sponsors .sponsor-overview-gold .group-left,
+  #content .view-leuven2013-sponsors .sponsor-overview-silver .group-right,
+  #content .view-leuven2013-sponsors .sponsor-overview-gold .group-right {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+  #content .view-leuven2013-sponsors .sponsor-overview-silver .field-name-field-sponsor-body,
+  #content .view-leuven2013-sponsors .sponsor-overview-gold .field-name-field-sponsor-body,
+  #content .view-leuven2013-sponsors .sponsor-overview-silver .sponsor-inline-title,
+  #content .view-leuven2013-sponsors .sponsor-overview-gold .sponsor-inline-title {
+    padding: 0;
+  }
+  #content .view-leuven2013-sponsors .col12 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .col11 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .col10 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .col9 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .col8 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .col7 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .col6 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .col5 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .col4 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .col3 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .col2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .col1 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+.dl-select-size1 {
+  width: 45px !important;
+}
+.dl-gevonden-header tr td {
+  font-size: 75%;
+}
+.first-page .multipage-controls-list .multipage-button a.multipage-link-previous {
+  display: none;
+}
+.last-page .multipage-controls-list .form-actions {
+  margin-top: 0px;
+  padding-top: 2px;
+}
+/* User hello block */
+#block-leuven2013-user-profile-hello {
+  position: absolute;
+  right: 60px;
+  top: 26px;
+}
+#block-leuven2013-user-profile-hello #hello-user {
+  list-style: none;
+}
+.view-id-attendees .views-fluid-grid-item,
+.view-id-volunteers .views-fluid-grid-item {
+  border: none;
+}
+.view-id-attendees .views-fluid-grid-item .views-field-picture .user-picture img,
+.view-id-volunteers .views-fluid-grid-item .views-field-picture .user-picture img {
+  margin: 0;
+}
+@font-face {
+  font-family: proxima_nova_excn_ltlight;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../font/proximanovaexcn-light-webfont.eot');
+  src: url('../font/proximanovaexcn-light-webfont.eot?#iefix') format('embedded-opentype'), url('../font/proximanovaexcn-light-webfont.woff') format('woff'), url('../font/proximanovaexcn-light-webfont.ttf') format('truetype'), url('../font/proximanovaexcn-light-webfont.svg#league_gothicregular') format('svg');
+}
+.transit {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.font {
+  font-family: proxima_nova_excn_ltlight, helvetica, arial, verdana;
+}
+h1#page-title {
+  font-family: proxima_nova_excn_ltlight, helvetica, arial, verdana;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 50px 0;
+  text-align: center;
+}
+h2,
+h3,
+h4 {
+  font-family: proxima_nova_excn_ltlight, helvetica, arial, verdana;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 18px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  color: #3993c0;
+}
+form label {
+  font-weight: normal;
+  color: #999;
+}
+div.messages {
+  border: 1px solid #ccc;
+  margin: 0;
+  border-radius: 4px;
+  text-align: center;
+  padding-left: 10px;
+  background-image: none;
+}
+.front .messages {
+  margin-top: 25px;
+  text-align: center;
+  border-radius: 0;
+}
+.tabs {
+  clear: both;
+  margin: 0 0 60px;
+  position: relative;
+  z-index: 5;
+}
+.tabs > ul {
+  background: none;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.tabs > ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: none;
+}
+.tabs > ul li.active a {
+  background: #3993c0;
+  position: relative;
+}
+.tabs > ul li.active a:after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  margin-left: -8px;
+  border-top: 8px solid #3993c0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.tabs > ul li a {
+  font-size: 22px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.tabs > ul li a.active {
+  background: #3993c0;
+  position: relative;
+}
+.tabs > ul li a.active:hover {
+  background: #3993c0;
+}
+.tabs > ul li a.active:after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  margin-left: -8px;
+  border-top: 8px solid #3993c0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.tabs > ul li a:hover {
+  background: #ff9430;
+}
+body {
+  color: #404040;
+  line-height: 22px;
+  font-size: 15px;
+  font-family: proxima_nova_excn_ltlight, helvetica, arial, verdana;
+}
+body #header {
+  position: relative;
+}
+body #header #header-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  height: 75px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  background: #fff;
+}
+body #header #header-top #header-top-inner {
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+  display: block;
+}
+body #header #header-top #header-top-inner a#logo {
+  float: none;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+body #header #header-top #header-top-inner a#logo img {
+  margin-top: 10px;
+}
+body #header #header-top #header-top-inner #navbutton {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 14px;
+  height: 14px;
+  background: url(../images/navbutton.png) no-repeat center center;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+body #header #header-top #header-top-inner #navbutton.open {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+body #header #header-top #header-top-inner #navigation h2 {
+  display: none;
+}
+body #header #header-top #header-top-inner #navigation ul {
+  position: absolute;
+  right: 10px;
+  width: 120px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0;
+  border: 1px solid #ccc;
+}
+body #header #header-top #header-top-inner #navigation ul:before {
+  position: absolute;
+  content: "";
+  top: -20px;
+  right: 15px;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ccc;
+}
+body #header #header-top #header-top-inner #navigation ul li {
+  padding: 0;
+}
+body #header #header-top #header-top-inner #navigation ul li a {
+  padding: 10px 30px;
+  display: block;
+  border-bottom: 1px dashed #ccc;
+  font-size: 16px;
+  color: #404040;
+}
+body #header #header-top #header-top-inner #navigation ul li a:hover,
+body #header #header-top #header-top-inner #navigation ul li a.active {
+  color: #fff;
+  background: #3993c0;
+  text-decoration: none;
+}
+body #header #header-top #header-top-inner #navigation ul li.last a {
+  border-bottom: none;
+}
+body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top {
+  display: none;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 {
+  margin-top: -40px;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 {
+  width: 100%;
+  margin-left: 5px;
+  text-align: center;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li {
+  display: inline-block;
+  margin: 0 20px;
+  float: none;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li:nth-child(4) {
+  margin-right: 150px;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li:nth-child(4) > ul {
+  margin-left: -38px;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li > a {
+  display: block;
+  color: #404040;
+  font-family: proxima_nova_excn_ltlight, helvetica, arial, verdana;
+  font-size: 18px;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li > a:hover {
+  color: #3993c0;
+  text-decoration: none;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li > ul {
+  width: 120px !important;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0;
+  border: 1px solid #ccc;
+  margin-left: -32px;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li > ul:before {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: 50px;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ccc;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li > ul > li > a {
+  padding: 10px 30px;
+  display: block;
+  border-bottom: 1px dashed #ccc;
+  font-size: 16px;
+  color: #404040;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li > ul > li > a:hover,
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li > ul > li > a.active {
+  color: #fff;
+  background: #3993c0;
+  text-decoration: none;
+}
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li > ul > li.last a,
+body #header #header-top #header-top-inner .region-header-top #block-superfish-1 ul#superfish-1 > li > ul > li.firstandlast a {
+  border-bottom: none;
+}
+body #header #header-middle {
+  margin-top: 75px;
+  height: 679px;
+  background: url(../images/bg-header-middle-front.jpg) no-repeat center center;
+  background-size: cover;
+}
+body #header #header-middle #header-middle-inner {
+  display: block;
+  float: none;
+}
+body #header #header-middle #header-middle-inner #block-block-4 {
+  text-align: center;
+  margin: 50px 0;
+  background: url(../images/dcl-banner-front.png) no-repeat center top;
+  padding-top: 240px;
+}
+body #header #header-middle #header-middle-inner #block-block-4 .content p {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+body #header #header-middle #header-middle-inner #block-block-4 .content p.bigtext {
+  color: #ff9430;
+  font-size: 46px;
+  text-transform: uppercase;
+}
+body #header #header-middle #header-middle-inner #block-block-5 {
+  width: 45%;
+  float: left;
+  text-align: left;
+  color: #fff;
+  font-size: 25px;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+  line-height: 40px;
+  margin-top: 2em;
+}
+body #header #header-middle #header-middle-inner #block-block-6,
+body #header #header-middle #header-middle-inner #block-block-7,
+body #header #header-middle #header-middle-inner #block-views-sponsors-block {
+  width: 53%;
+  float: right;
+}
+body #header #header-middle #header-middle-inner #block-block-6 .content p a,
+body #header #header-middle #header-middle-inner #block-block-7 .content p a {
+  color: #fff;
+  font-size: 28px;
+  background: #ff9430;
+  padding: 5px 30px;
+  text-align: center;
+  border-radius: 4px;
+}
+body #header #header-middle #header-middle-inner #block-block-6 .content p a:hover,
+body #header #header-middle #header-middle-inner #block-block-7 .content p a:hover {
+  background: #3993c0;
+  text-decoration: none;
+}
+body #header #header-middle #header-middle-inner #block-block-7 {
+  margin-bottom: 10px;
+  margin-top: 4.5em;
+}
+body #header #header-middle #header-middle-inner #block-views-sponsors-block {
+  margin-top: 0;
+  text-align: center;
+}
+body #header #header-bottom #header-bottom-inner .block {
+  padding: 80px 5px 20px;
+}
+body #header #header-bottom #header-bottom-inner .block h2 {
+  text-align: center;
+  font-size: 46px;
+  color: #fff;
+  font-weight: normal;
+}
+body #header #header-bottom #header-bottom-inner .block .content {
+  font-size: 16px;
+  text-align: justify;
+  color: #fff;
+}
+body #header #header-bottom #header-bottom-inner #header-bottom-left {
+  background: url(../images/icon-learn.png) no-repeat center top;
+  margin-top: 30px;
+  opacity: 0.85;
+  cursor: pointer;
+}
+body #header #header-bottom #header-bottom-inner #header-bottom-left:hover {
+  opacity: 1;
+}
+body #header #header-bottom #header-bottom-inner #header-bottom-middle {
+  background: url(../images/icon-share.png) no-repeat center top;
+  margin-top: 30px;
+  opacity: 0.85;
+  cursor: pointer;
+}
+body #header #header-bottom #header-bottom-inner #header-bottom-middle:hover {
+  opacity: 1;
+}
+body #header #header-bottom #header-bottom-inner #header-bottom-right {
+  background: url(../images/icon-involve.png) no-repeat center top;
+  margin-top: 30px;
+  opacity: 0.85;
+  cursor: pointer;
+}
+body #header #header-bottom #header-bottom-inner #header-bottom-right:hover {
+  opacity: 1;
+}
+body #sidebar-second {
+  margin-top: 40px;
+}
+body #footer {
+  padding-bottom: 25px;
+}
+body #footer #footer-bottom #block-views-leuven2013-sponsors-block-3 .view-leuven2013-sponsors .views-row:nth-child(2) img {
+  margin-top: -10px;
+}
+body.not-front #header #header-middle {
+  background: #3993c0;
+  height: auto;
+}
+body.not-front #header #header-bottom {
+  display: none;
+}
+body.not-front #block-views-sponsors-block {
+  max-width: 45%;
+}
+body.front .node-page {
+  display: none;
+}
+body.front #block-views-leuven2013-news-block {
+  margin-top: 50px;
+}
+body.front #block-views-leuven2013-sponsors-block-5 img,
+body.front #block-views-leuven2013-sponsors-block-9 img {
+  border-radius: 4px;
+}
+body.front #preface-wrapper h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 35px 0;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+body.front #preface-wrapper .region-preface-top {
+  text-align: center;
+}
+body.front #preface-wrapper .region-preface-top .views-row {
+  float: none;
+  display: inline-block;
+  margin: 0 30px;
+}
+.item-list .pager {
+  padding: 40px 0;
+}
+.item-list .pager li {
+  border-radius: 50%;
+  background: #ddd;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  line-height: 25px;
+  margin: 0 1px;
+}
+.item-list .pager li.pager-current {
+  color: #fff;
+  background: #3993c0;
+}
+.item-list .pager li a {
+  color: #404040;
+  display: block;
+}
+#counter {
+  font-size: 24px !important;
+  position: relative;
+  background: #3993c0;
+  padding: 10px 0;
+  width: 44%;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+#counter #cntdwn {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: transparent !important;
+}
+#counter #cntdwn span {
+  color: #fff;
+}
+.not-front #cntdwn {
+  display: none;
+}
+#sidebar-second #block-views-leuven2013-sponsors-block-5,
+#sidebar-second #block-views-leuven2013-sponsors-block-7,
+#sidebar-second #block-views-leuven2013-sponsors-block-9,
+#sidebar-second #block-views-leuven2013-sponsors-block-14 {
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 20px;
+}
+#sidebar-second #block-views-leuven2013-sponsors-block-5 .views-field-field-sponsor-logo,
+#sidebar-second #block-views-leuven2013-sponsors-block-7 .views-field-field-sponsor-logo,
+#sidebar-second #block-views-leuven2013-sponsors-block-9 .views-field-field-sponsor-logo,
+#sidebar-second #block-views-leuven2013-sponsors-block-14 .views-field-field-sponsor-logo {
+  text-align: center;
+}
+.page-program #page-wrapper h1#page-title,
+.page-taxonomy-term #page-wrapper h1#page-title {
+  width: 940px;
+}
+.page-program #page-wrapper #main-wrapper #content,
+.page-taxonomy-term #page-wrapper #main-wrapper #content {
+  width: 940px;
+  position: relative;
+}
+.page-program #page-wrapper #main-wrapper #content .tabs,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .tabs {
+  clear: both;
+  margin: 0 0 60px;
+  position: relative;
+  z-index: 5;
+}
+.page-program #page-wrapper #main-wrapper #content .tabs > ul,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .tabs > ul {
+  background: none;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.page-program #page-wrapper #main-wrapper #content .tabs > ul li,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .tabs > ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: none;
+}
+.page-program #page-wrapper #main-wrapper #content .tabs > ul li a,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .tabs > ul li a {
+  font-size: 22px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.page-program #page-wrapper #main-wrapper #content .tabs > ul li a.active,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .tabs > ul li a.active {
+  background: #3993c0;
+  position: relative;
+}
+.page-program #page-wrapper #main-wrapper #content .tabs > ul li a.active:after,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .tabs > ul li a.active:after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 45%;
+  border-top: 8px solid #3993c0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+.page-program #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block,
+.page-taxonomy-term #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block {
+  position: relative;
+  text-align: center;
+}
+.page-program #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block h2,
+.page-taxonomy-term #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block h2 {
+  display: inline-block;
+}
+.page-program #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block .legendbutton,
+.page-taxonomy-term #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block .legendbutton {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 7px;
+  background: url(../images/submenubutton.png) no-repeat center center;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+.page-program #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block .legendbutton.open,
+.page-taxonomy-term #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block .legendbutton.open {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.page-program #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block > .content,
+.page-taxonomy-term #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block > .content {
+  margin-top: 10px;
+}
+.page-program #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block > .content .view-leuven2013-tracks .views-row,
+.page-taxonomy-term #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block > .content .view-leuven2013-tracks .views-row {
+  float: none;
+  display: inline-block;
+  margin: 0 5px 5px;
+}
+.page-program #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block > .content .view-leuven2013-tracks .views-row .views-field-field-track-color-code,
+.page-taxonomy-term #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block > .content .view-leuven2013-tracks .views-row .views-field-field-track-color-code {
+  display: none;
+}
+.page-program #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block > .content .view-leuven2013-tracks .views-row .views-field-name,
+.page-taxonomy-term #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block > .content .view-leuven2013-tracks .views-row .views-field-name {
+  margin: 0;
+}
+.page-program #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block > .content .view-leuven2013-tracks .views-row .views-field-name a,
+.page-taxonomy-term #page-wrapper #main-wrapper #content #block-views-leuven2013-tracks-block > .content .view-leuven2013-tracks .views-row .views-field-name a {
+  border-radius: 4px;
+  padding: 3px 6px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-left .field,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-left .field {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #ccc;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-left .field.field-name-field-session-track,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-left .field.field-name-field-session-track {
+  text-align: center;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-left .field.field-name-field-session-track .field-item,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-left .field.field-name-field-session-track .field-item {
+  border-radius: 4px;
+  margin-bottom: 2px;
+  line-height: 1;
+  padding: 3px 0 2px;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-left .field.field-name-field-session-track .field-item a,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-left .field.field-name-field-session-track .field-item a {
+  color: #fff;
+  text-transform: uppercase;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-left .field.field-name-field-speakers > .field-label,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-left .field.field-name-field-speakers > .field-label {
+  text-indent: -999999px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background: url(../images/icon-speaker.png) no-repeat left top;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title h3,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title h3 {
+  font-size: 22px;
+  margin-top: 0;
+  width: 70%;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title h3 a,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title h3 a {
+  color: #404040;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_welcome h3,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_welcome h3,
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_coffee h3,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_coffee h3 {
+  width: 100%;
+  background: url(../images/icon-coffee.png) no-repeat center top;
+  padding-top: 65px;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_lunch h3,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_lunch h3 {
+  width: 100%;
+  background: url(../images/icon-eat.png) no-repeat center top;
+  padding-top: 65px;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_drinks h3,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_drinks h3 {
+  width: 100%;
+  background: url(../images/icon-drink.png) no-repeat center top;
+  padding-top: 65px;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_bbq h3,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_bbq h3 {
+  width: 100%;
+  background: url(../images/icon-bbq.png) no-repeat center top;
+  padding-top: 65px;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_closing h3,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title.schedule_closing h3 {
+  width: 100%;
+  background: url(../images/icon-closing.png) no-repeat center top;
+  padding-top: 65px;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-right,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-right {
+  border-left: 1px solid #ccc;
+  background: none;
+  height: 170px;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-right .field-name-session-room,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-right .field-name-session-room {
+  background: #3993c0;
+  border-radius: 0 4px 4px 0;
+  text-align: center;
+}
+.page-program #page-wrapper #main-wrapper #content .ds-3col .group-right .field-name-session-room a,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-right .field-name-session-room a {
+  color: #fff;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions #filterbox,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions #filterbox {
+  font-size: 22px;
+  text-align: right;
+  padding-right: 30px;
+  position: relative;
+  margin-top: -77px;
+  margin-bottom: 77px;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions #filterbox #filterbutton,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions #filterbox #filterbutton {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  top: -3px;
+  background: url(../images/submenubutton.png) no-repeat center center;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions #filterbox #filterbutton.open,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions #filterbox #filterbutton.open {
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-filters,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-filters {
+  background: #fff;
+  padding: 10px 20px;
+  margin: 10px 0 60px;
+  border-radius: 4px;
+  position: relative;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-filters .feed-icon,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-filters .feed-icon {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-filters .views-exposed-form .views-exposed-widget,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-filters .views-exposed-form .views-exposed-widget {
+  padding: 0 2%;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-filters .views-exposed-form .views-exposed-widget.views-submit-button > input,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-filters .views-exposed-form .views-exposed-widget.views-submit-button > input {
+  width: 100%;
+  border-radius: 4px;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-filters .views-exposed-form #edit-field-session-track-tid-wrapper,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-filters .views-exposed-form #edit-field-session-track-tid-wrapper {
+  width: 20%;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-content,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-content {
+  margin-bottom: 30px;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row {
+  float: left;
+  width: 46%;
+  margin: 0 2% 50px;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-label,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-label {
+  float: left;
+  margin-right: 5px;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-field-title,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-field-title {
+  font-size: 30px;
+  padding-bottom: 5px;
+  line-height: 1;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-field-body,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-field-body {
+  font-size: 18px;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-field-picture,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-field-picture {
+  float: left;
+  margin-right: 20px;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-field-picture img,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-field-picture img {
+  border-radius: 4px;
+}
+.page-program #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-field-field-speakers,
+.page-taxonomy-term #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row .views-field-field-speakers {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.page-program #page-wrapper #main-wrapper #sidebar-second,
+.page-taxonomy-term #page-wrapper #main-wrapper #sidebar-second {
+  width: 940px;
+  margin-top: 60px;
+}
+.page-program #page-wrapper #main-wrapper #sidebar-second .block,
+.page-taxonomy-term #page-wrapper #main-wrapper #sidebar-second .block {
+  width: 29%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 10px 1%;
+  border-radius: 4px;
+}
+.page-program #page-wrapper #main-wrapper #sidebar-second .block h2,
+.page-taxonomy-term #page-wrapper #main-wrapper #sidebar-second .block h2 {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.page-program #page-wrapper #main-wrapper #sidebar-second .block#block-leuven2013-social-social-sidebar,
+.page-taxonomy-term #page-wrapper #main-wrapper #sidebar-second .block#block-leuven2013-social-social-sidebar {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 20px 0 30px 1%;
+  text-align: center;
+  background: none;
+  border-radius: 0;
+  padding-top: 15px;
+}
+.page-program #main-wrapper .region-content #block-leuven2013-program-program-message,
+.page-taxonomy-term #main-wrapper .region-content #block-leuven2013-program-program-message {
+  text-align: center;
+  padding: 10px 0;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  background: #f5f5f5;
+  margin-bottom: 40px;
+}
+.page-program #main-wrapper .region-content #block-leuven2013-program-program-message p,
+.page-taxonomy-term #main-wrapper .region-content #block-leuven2013-program-program-message p {
+  margin-bottom: 0;
+}
+.page-program #main-wrapper .region-content .group-middle,
+.page-taxonomy-term #main-wrapper .region-content .group-middle {
+  position: relative;
+}
+.page-program #main-wrapper .region-content .group-middle .field-name-flag,
+.page-taxonomy-term #main-wrapper .region-content .group-middle .field-name-flag {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.page-program #main-wrapper .region-content .group-middle .field-name-flag a,
+.page-taxonomy-term #main-wrapper .region-content .group-middle .field-name-flag a {
+  padding-left: 16px;
+}
+.page-program #main-wrapper .region-content .group-middle .field-name-flag a.flag-action,
+.page-taxonomy-term #main-wrapper .region-content .group-middle .field-name-flag a.flag-action {
+  background: url(../images/add.png) no-repeat left center;
+}
+.page-program #main-wrapper .region-content .group-middle .field-name-flag a.unflag-action,
+.page-taxonomy-term #main-wrapper .region-content .group-middle .field-name-flag a.unflag-action {
+  background: url(../images/remove.png) no-repeat left center;
+}
+.page-program #main-wrapper .region-content .group-middle .field-name-title h3,
+.page-taxonomy-term #main-wrapper .region-content .group-middle .field-name-title h3 {
+  width: 70%;
+}
+.page-program #main-wrapper .region-content .group-middle .field-name-title.schedule_welcome h3,
+.page-taxonomy-term #main-wrapper .region-content .group-middle .field-name-title.schedule_welcome h3 {
+  width: 100%;
+}
+.page-program #main-wrapper .region-content #conf-program h2.timeslot-title,
+.page-taxonomy-term #main-wrapper .region-content #conf-program h2.timeslot-title {
+  color: #404040;
+  background: #e5e5e5;
+  border-bottom: none;
+  padding: 0;
+  margin-bottom: 40px;
+  border-radius: 4px;
+}
+.page-program #main-wrapper .region-content #conf-program .ds-3col .group-right,
+.page-taxonomy-term #main-wrapper .region-content #conf-program .ds-3col .group-right {
+  background: #ccc;
+}
+.page-speakers #page-wrapper h1#page-title {
+  width: 940px;
+}
+.page-speakers #page-wrapper #main-wrapper #content {
+  width: 940px;
+  position: relative;
+}
+.page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping {
+  background: white;
+  border: 1px solid #ddd;
+  width: 31%;
+  height: 435px;
+  margin: 0 1% 20px;
+  float: left;
+}
+.page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-header {
+  display: block;
+}
+.page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-header .user-picture a {
+  position: relative;
+  display: block;
+}
+.page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-header .user-picture a:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url(../images/icon-image-hover.png) no-repeat center center rgba(0, 0, 0, 0.65);
+  opacity: 1;
+}
+.page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-header .user-picture a img {
+  display: block;
+  width: 100%;
+}
+.page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-content {
+  display: block;
+  padding: 0 20px;
+}
+.page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-content h3 {
+  margin-top: 0;
+  font-size: 26px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-content ul {
+  margin-top: 0;
+  text-align: center;
+  padding: 0;
+}
+.page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-content ul li {
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+}
+.page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-content ul li a {
+  padding: 0 5px;
+  margin: 0 5px;
+}
+.page-speakers #page-wrapper #main-wrapper #sidebar-second {
+  width: 940px;
+  margin-top: 60px;
+}
+.page-speakers #page-wrapper #main-wrapper #sidebar-second .block {
+  width: 29%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 10px 1%;
+  border-radius: 4px;
+}
+.page-speakers #page-wrapper #main-wrapper #sidebar-second .block h2 {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.page-speakers #page-wrapper #main-wrapper #sidebar-second .block#block-leuven2013-social-social-sidebar {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 20px 0 30px 1%;
+  text-align: center;
+  background: none;
+  border-radius: 0;
+  padding-top: 15px;
+}
+.page-community-attendees #page-wrapper h1#page-title {
+  width: 100%;
+}
+.page-community-attendees #page-wrapper #main-wrapper #content {
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+.page-community-attendees #page-wrapper #main-wrapper #content .view-attendees .views-row {
+  width: 22%;
+  margin: 0 1% 20px;
+  float: left;
+  background: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.page-community-attendees #page-wrapper #main-wrapper #content .view-attendees .views-row .views-field-field-profile-last {
+  max-height: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.page-community-attendees #page-wrapper #main-wrapper #content .view-attendees .views-row .views-field-picture {
+  position: relative;
+}
+.page-community-attendees #page-wrapper #main-wrapper #content .view-attendees .views-row .views-field-picture img {
+  width: 100%;
+  height: auto;
+  background: #e4e4e4;
+  margin: 0;
+  display: block;
+}
+.page-community-attendees #page-wrapper #main-wrapper #content .view-attendees .views-row .views-field-picture a {
+  display: block;
+}
+.page-community-attendees #page-wrapper #main-wrapper #content .view-attendees .views-row .views-field-picture a:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url(../images/icon-image-hover.png) no-repeat center center rgba(0, 0, 0, 0.65);
+}
+.page-community-attendees #page-wrapper #main-wrapper #content .view-attendees .views-row .views-field-field-profile-last {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 0 0;
+}
+.page-community-attendees #page-wrapper #main-wrapper #content .view-attendees .views-row .views-field-field-profile-org {
+  display: block;
+  padding: 0 0 10px;
+}
+.page-community-attendees #page-wrapper #main-wrapper #content .view-attendees .views-row .views-field-field-profile-org .organization-placeholder {
+  height: 22px;
+}
+.page-community-attendees #page-wrapper #main-wrapper #sidebar-second {
+  width: 100%;
+  margin-top: 60px;
+}
+.page-community-attendees #page-wrapper #main-wrapper #sidebar-second .block {
+  width: 29%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 10px 1%;
+  border-radius: 4px;
+}
+.page-community-attendees #page-wrapper #main-wrapper #sidebar-second .block h2 {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.page-community-attendees #page-wrapper #main-wrapper #sidebar-second .block#block-leuven2013-social-social-sidebar {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 20px 0 30px 1%;
+  text-align: center;
+  background: none;
+  border-radius: 0;
+  padding-top: 15px;
+}
+.field-name-field-experience .field-item {
+  background-position-y: 3px;
+  width: 36px;
+}
+.page-user .region-content {
+  /*    input.form-text {
+      border-radius: 4px;
+      background: #f6f6f6;
+      border: 1px solid #ddd;
+    }
+    input#edit-submit {
+      padding: 4px 8px;
+      border-radius: 4px;
+    }*/
+}
+.page-user .region-content .user-profile .group-left {
+  width: 40%;
+}
+.page-user .region-content .user-profile .group-left .field-name-ds-user-picture img {
+  display: block;
+}
+.page-user .region-content .user-profile .group-right {
+  font-size: 18px;
+  background: #fff;
+  padding: 36px 0;
+  width: 60%;
+  height: 176px;
+  overflow: hidden;
+}
+.page-user .region-content .user-profile .group-right .field-label {
+  color: #aaa;
+  width: 50%;
+  text-align: right;
+  margin-right: 3%;
+}
+.page-user .region-content .user-profile .group-right .field-items {
+  width: 47%;
+}
+.page-user .region-content .user-profile .group-right .field-name-field-experience .field-item {
+  background-position-y: 3px;
+  width: 36px;
+}
+input.form-text {
+  border-radius: 4px;
+  background: #f6f6f6;
+  border: 1px solid #ddd;
+}
+input#edit-submit {
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.page-sponsors .view-content {
+  text-align: center;
+}
+.page-sponsors #main-wrapper .region-content .block-views {
+  margin: 40px 0;
+}
+.page-sponsors #main-wrapper .region-content .block-views > h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.page-sponsors #main-wrapper .region-content .block-views .views-row {
+  margin: 20px 0;
+}
+.page-sponsors #main-wrapper .region-content .block-views .views-row .field-name-field-sponsor-logo {
+  width: 70%;
+  margin: 0 15%;
+}
+.page-node-44 #main-wrapper .region-content .field-name-body img {
+  float: left;
+  margin-right: 20px;
+}
+.page-node-77 #main-wrapper .region-content .field-name-body {
+  padding-left: 185px;
+  background: url(../images/bier.png) no-repeat left top;
+}
+.page-node-77 #main-wrapper .region-content .field-name-body ul {
+  padding: 0;
+}
+.page-node-77 #main-wrapper .region-content .field-name-body ul li {
+  list-style: none;
+}
+.page-node-77 #main-wrapper .region-content .field-name-body ul li a.cta-button {
+  color: #fff;
+  font-size: 18px;
+  background: #3993c0;
+  padding: 5px 30px;
+  text-align: center;
+  border-radius: 4px;
+  display: block;
+  width: 50%;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+}
+.page-node-77 #main-wrapper .region-content .field-name-body ul li a.cta-button:hover {
+  background: #ff9430;
+  text-decoration: none;
+}
+.page-news #main-wrapper .region-content .view-news .node-news h2 {
+  font-size: 30px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.page-news #main-wrapper .region-content .view-news .node-news ul.links li.node-readmore {
+  padding: 0;
+}
+.page-news #main-wrapper .region-content .view-news .node-news ul.links li.node-readmore a {
+  color: #404040;
+  font-size: 14px;
+  background: #d6d6d6;
+  padding: 5px 30px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+}
+.page-news #main-wrapper .region-content .view-news .node-news ul.links li.node-readmore a:hover {
+  background: #3993c0;
+  text-decoration: none;
+  color: white;
+}
+#main-wrapper .region-content .field-name-body h2 {
+  font-size: 22px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  color: #3993c0;
+  margin-bottom: 15px;
+}
+.page-node-78 #main-wrapper .region-content #block-views-volunteers-block h2 {
+  font-size: 22px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  color: #3993c0;
+  margin-bottom: 15px;
+}
+.page-node-78 #main-wrapper .region-content #block-views-volunteers-block .view-volunteers .views-row {
+  width: 31%;
+  margin: 0 2% 20px 0;
+  float: left;
+  background: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.page-node-78 #main-wrapper .region-content #block-views-volunteers-block .view-volunteers .views-row .views-field-picture {
+  position: relative;
+}
+.page-node-78 #main-wrapper .region-content #block-views-volunteers-block .view-volunteers .views-row .views-field-picture img {
+  width: 100%;
+  height: auto;
+  background: #e4e4e4;
+  margin: 0;
+  display: block;
+}
+.page-node-78 #main-wrapper .region-content #block-views-volunteers-block .view-volunteers .views-row .views-field-picture a {
+  display: block;
+}
+.page-node-78 #main-wrapper .region-content #block-views-volunteers-block .view-volunteers .views-row .views-field-picture a:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url(../images/icon-image-hover.png) no-repeat center center rgba(0, 0, 0, 0.65);
+}
+.page-node-78 #main-wrapper .region-content #block-views-volunteers-block .view-volunteers .views-row .views-field-field-profile-last {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 0 0;
+}
+.page-node-78 #main-wrapper .region-content #block-views-volunteers-block .view-volunteers .views-row .views-field-field-profile-org {
+  display: block;
+  padding: 0 0 10px;
+}
+.page-node-78 #main-wrapper .region-content #block-views-volunteers-block .view-volunteers .views-row .views-field-field-profile-org .field-content {
+  height: 22px;
+}
+.page-node-6 #main-wrapper .region-content #node-6 .field-name-body iframe {
+  padding: 4px;
+  border: 1px solid #ccc;
+}
+.page-node-6 #main-wrapper .region-content #node-6 .field-name-body a {
+  color: #ff9430 !important;
+}
+.page-user-register #main-wrapper .region-content #user-register-form .field-group-multipage-group-wrapper .multipage-controls-list {
+  float: left;
+  margin-top: -20px;
+}
+.page-user-register #main-wrapper .region-content #user-register-form .field-group-multipage-group-wrapper .multipage-controls-list input.form-submit {
+  color: white;
+  font-size: 12px;
+  background: #3993c0;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 0 15px 5px 0;
+  text-transform: uppercase;
+}
+.page-user-register #main-wrapper .region-content #user-register-form .field-group-multipage-group-wrapper .multipage-controls-list input.form-submit:hover {
+  background: #ff9430;
+}
+.page-user-register #main-wrapper .region-content #user-register-form .field-group-multipage-group-wrapper .multipage-controls-list a.multipage-link-previous {
+  background: none;
+  border: none;
+  color: #3993c0;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.page-user-register #main-wrapper .region-content #user-register-form .field-group-multipage-group-wrapper .multipage-controls-list a.multipage-link-previous:hover {
+  color: #ff9430;
+}
+.page-user-register #main-wrapper .region-content #user-register-form .field-group-multipage-group-wrapper .multipage-counter {
+  float: right;
+  font-size: 14px;
+}
+.page-user-register #main-wrapper .region-content #user-register-form #edit-actions {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.page-node-46 #main-wrapper #content {
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp h2 {
+  font-size: 22px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  color: #3993c0;
+  margin-bottom: 15px;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-body input {
+  font-family: proxima_nova_excn_ltlight, helvetica, arial, verdana;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-body input.dl-button {
+  text-align: left;
+  color: white;
+  font-size: 14px;
+  background: #ff9430;
+  padding: 5px 30px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-body input.dl-button:hover {
+  background: #3993c0;
+  text-decoration: none;
+  color: white;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-body .dl-text-right {
+  text-align: center;
+  clear: both;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px dashed #ccc;
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper {
+  width: 100%;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right {
+  width: 100%;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right #routeplanAanvraagFormId .dl-border {
+  padding: 20px;
+  background: white;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right #routeplanAanvraagFormId .dl-border > .dl-header {
+  display: none;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right #routeplanAanvraagFormId .dl-border > fieldset {
+  width: 28%;
+  float: left;
+  margin-right: 2%;
+  font-family: proxima_nova_excn_ltlight, helvetica, arial, verdana;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right #routeplanAanvraagFormId .dl-border > fieldset .dl-titel {
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #ccc;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right #routeplanAanvraagFormId .dl-border > fieldset .dl-box-content .dl-form-row {
+  width: 100%;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right #routeplanAanvraagFormId .dl-border > fieldset .dl-box-content .dl-form-row input.form-text {
+  display: block;
+  font-family: proxima_nova_excn_ltlight, helvetica, arial, verdana;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right #routeplanAanvraagFormId .dl-border > fieldset .dl-box-content .dl-form-row .dl-input-location {
+  width: 95%;
+  margin-bottom: 5px;
+  font-family: proxima_nova_excn_ltlight, helvetica, arial, verdana;
+}
+.page-node-46 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right #routeplanAanvraagFormId .dl-border > .dl-icon-swap {
+  float: left;
+  width: 4%;
+  margin-right: 1%;
+  margin-top: 105px;
+  behavior: url(-ms-transform.htc);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+}
+.page-node-46 #main-wrapper #sidebar-second {
+  width: 100%;
+  margin-top: 60px;
+}
+.page-node-46 #main-wrapper #sidebar-second .block {
+  width: 29%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 10px 1%;
+  border-radius: 4px;
+}
+.page-node-46 #main-wrapper #sidebar-second .block h2 {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.page-node-46 #main-wrapper #sidebar-second .block#block-leuven2013-social-social-sidebar {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 20px 0 30px 1%;
+  text-align: center;
+  background: none;
+  border-radius: 0;
+  padding-top: 15px;
+}
+.page-user-sessions #main-wrapper #content .view-flag-bookmarks-tab .view-content {
+  margin-bottom: 30px;
+}
+.page-user-sessions #main-wrapper #content .view-flag-bookmarks-tab .view-content .views-row {
+  float: left;
+  width: 100%;
+  margin: 0 0 30px;
+  padding: 0 0 30px;
+  border-bottom: 2px solid #ccc;
+}
+.page-user-sessions #main-wrapper #content .view-flag-bookmarks-tab .view-content .views-row .views-label {
+  float: left;
+  margin-right: 5px;
+}
+.page-user-sessions #main-wrapper #content .view-flag-bookmarks-tab .view-content .views-row .views-field-title {
+  font-size: 30px;
+  padding-bottom: 5px;
+  line-height: 1;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+}
+.page-user-sessions #main-wrapper #content .view-flag-bookmarks-tab .view-content .views-row .views-field-title a {
+  color: #3993c0;
+}
+.page-user-sessions #main-wrapper #content .view-flag-bookmarks-tab .view-content .views-row .views-field-body {
+  font-size: 18px;
+}
+.page-user-sessions #main-wrapper #content .view-flag-bookmarks-tab .view-content .views-row .views-field-picture {
+  float: left;
+  margin-right: 20px;
+}
+.page-user-sessions #main-wrapper #content .view-flag-bookmarks-tab .view-content .views-row .views-field-picture img {
+  border-radius: 4px;
+}
+.page-user-sessions #main-wrapper #content .view-flag-bookmarks-tab .view-content .views-row .node-time-slot {
+  padding: 0;
+  margin: 0;
+  border: none;
+  clear: both;
+}
+.page-user-sessions #main-wrapper #content .view-flag-bookmarks-tab .view-content .views-row .node-time-slot .date-display-single {
+  color: #3993c0;
+}
+.page-user-sessions #main-wrapper #content .view-flag-bookmarks-tab .view-content .views-row .views-field-field-speakers {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.node-type-room #page-wrapper .region-content .ds-1col .field-label {
+  float: left;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+.node-type-room #page-wrapper .region-content .ds-1col .field-name-field-room-capacity {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+}
+.node-type-room #page-wrapper .region-content .ds-1col .field-name-field-room-capacity .field-label {
+  float: left;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+.node-type-room #page-wrapper .region-content .ds-1col .field-name-field-room-capacity .field-item {
+  color: #fff;
+  background: #ff9430;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+.node-type-room #page-wrapper .region-content .ds-1col .field-name-field-room-slots-types-allowed > .field-label {
+  margin-bottom: 20px;
+}
+.node-type-session #page-wrapper .region-content .field-name-flag {
+  position: relative;
+  right: auto;
+  top: auto;
+  margin-bottom: 10px;
+}
+.node-type-session #page-wrapper .region-content .field-name-flag a {
+  padding-left: 16px;
+}
+.node-type-session #page-wrapper .region-content .field-name-flag a.flag-action {
+  background: url(../images/add.png) no-repeat left center;
+}
+.node-type-session #page-wrapper .region-content .field-name-flag a.unflag-action {
+  background: url(../images/remove.png) no-repeat left center;
+}
+@media screen and (min-width: 740px) and (max-width: 980px) {
+  .page-speakers #header #header-top,
+  .page-program #header #header-top,
+  body #header #header-top {
+    position: relative;
+  }
+  .page-speakers #header #header-top #menubutton,
+  .page-program #header #header-top #menubutton,
+  body #header #header-top #menubutton {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background: url(../images/menubutton.png) no-repeat left top;
+    cursor: pointer;
+  }
+  .page-speakers #header #header-top #header-top-inner,
+  .page-program #header #header-top #header-top-inner,
+  body #header #header-top #header-top-inner {
+    width: 100%;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top {
+    position: absolute;
+    z-index: 9;
+    left: 17px;
+    display: none;
+    top: 67px;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul {
+    width: 200px;
+    background: #fff;
+    padding: 0;
+    border: 1px solid #ccc;
+    margin-left: 0;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul:before,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul:before,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul:before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 10px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ccc;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a {
+    padding: 10px 30px;
+    display: block;
+    border-bottom: 1px dashed #ccc;
+    font-size: 16px;
+    color: #404040;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a:hover,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a:hover,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a:hover,
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a.active,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a.active,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a.active {
+    color: #fff;
+    background: #3993c0;
+    text-decoration: none;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li #submenubutton,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li #submenubutton,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li #submenubutton {
+    position: absolute;
+    right: 15px;
+    top: 6px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/submenubutton.png) no-repeat center center;
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li #submenubutton.open,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li #submenubutton.open,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li #submenubutton.open {
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul {
+    width: 200px;
+    background: #ccc;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.6);
+    padding: 0;
+    margin-left: 0;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li {
+    margin: 0;
+    padding: 0;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a {
+    padding: 10px 30px;
+    display: block;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #404040;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a:hover,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a:hover,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a:hover,
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a.active,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a.active,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a.active {
+    color: #fff;
+    background: #3993c0;
+    text-decoration: none;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li.last a,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li.last a,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li.last a,
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li.firstandlast a,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li.firstandlast a,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li.firstandlast a {
+    border-bottom: none;
+  }
+  .page-speakers #header #header-top #header-top-inner .region-header-top #block-superfish-1,
+  .page-program #header #header-top #header-top-inner .region-header-top #block-superfish-1,
+  body #header #header-top #header-top-inner .region-header-top #block-superfish-1 {
+    display: none;
+  }
+  .page-speakers #header #header-middle,
+  .page-program #header #header-middle,
+  body #header #header-middle {
+    margin-top: 0;
+  }
+  .page-speakers #header #header-middle #header-middle-inner #block-block-4,
+  .page-program #header #header-middle #header-middle-inner #block-block-4,
+  body #header #header-middle #header-middle-inner #block-block-4 {
+    margin-top: 0;
+  }
+  .page-speakers #header #header-middle #header-middle-inner #block-views-sponsors-block,
+  .page-program #header #header-middle #header-middle-inner #block-views-sponsors-block,
+  body #header #header-middle #header-middle-inner #block-views-sponsors-block {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  .page-speakers #header #header-middle #header-middle-inner #block-views-sponsors-block a,
+  .page-program #header #header-middle #header-middle-inner #block-views-sponsors-block a,
+  body #header #header-middle #header-middle-inner #block-views-sponsors-block a {
+    line-height: 1;
+    height: auto;
+  }
+  .page-speakers #page-wrapper h1#page-title,
+  .page-program #page-wrapper h1#page-title,
+  body #page-wrapper h1#page-title {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .page-speakers #page-wrapper #main-wrapper #content,
+  .page-program #page-wrapper #main-wrapper #content,
+  body #page-wrapper #main-wrapper #content {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+  }
+  .page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping,
+  .page-program #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping,
+  body #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping {
+    height: 365px;
+  }
+  .page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-content h3,
+  .page-program #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-content h3,
+  body #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-content h3 {
+    font-size: 22px;
+  }
+  .page-speakers #footer #footer-bottom #block-views-leuven2013-sponsors-block-3 .view-leuven2013-sponsors .views-row,
+  .page-program #footer #footer-bottom #block-views-leuven2013-sponsors-block-3 .view-leuven2013-sponsors .views-row,
+  body #footer #footer-bottom #block-views-leuven2013-sponsors-block-3 .view-leuven2013-sponsors .views-row {
+    width: 20%;
+    margin: 0 6% 20px;
+    float: left;
+  }
+  .page-community-attendees #page-wrapper #main-wrapper #content .view-attendees .views-row {
+    width: 22%;
+    margin: 0 1% 20px;
+  }
+  .page-user .region-content .user-profile .group-right {
+    height: 216px;
+  }
+  .not-front #sidebar-second .block .view-leuven2013-sponsors .view-empty a {
+    display: block;
+  }
+  .page-node-112 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right #routeplanAanvraagFormId .dl-border > fieldset {
+    margin-right: 1%;
+  }
+  .page-program #page-wrapper #main-wrapper #content,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content {
+    width: 100%;
+  }
+  .page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title h3,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-title h3 {
+    width: 65%;
+  }
+  .page-program #page-wrapper #main-wrapper #content .ds-3col .group-right h2,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-right h2 {
+    line-height: 1;
+    padding: 5px;
+  }
+  .page-program #page-wrapper #main-wrapper #sidebar-second,
+  .page-taxonomy-term #page-wrapper #main-wrapper #sidebar-second {
+    width: 700px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 740px) {
+  body #header #header-top {
+    position: relative;
+  }
+  body #header #header-top #menubutton {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    background: url(../images/menubutton.png) no-repeat left top;
+    cursor: pointer;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top {
+    position: absolute;
+    z-index: 9;
+    left: 17px;
+    display: none;
+    top: 67px;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul {
+    width: 200px;
+    background: #fff;
+    padding: 0;
+    border: 1px solid #ccc;
+    margin-left: 0;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul:before {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 10px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ccc;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a {
+    padding: 10px 30px;
+    display: block;
+    border-bottom: 1px dashed #ccc;
+    font-size: 16px;
+    color: #404040;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a:hover,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > a.active {
+    color: #fff;
+    background: #3993c0;
+    text-decoration: none;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li #submenubutton {
+    position: absolute;
+    right: 15px;
+    top: 6px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/submenubutton.png) no-repeat center center;
+    cursor: pointer;
+    opacity: 0.5;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li #submenubutton.open {
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul {
+    width: 200px;
+    background: #ccc;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.6);
+    padding: 0;
+    margin-left: 0;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li {
+    margin: 0;
+    padding: 0;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a {
+    padding: 10px 30px;
+    display: block;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #404040;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a:hover,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li > ul > li > a.active {
+    color: #fff;
+    background: #3993c0;
+    text-decoration: none;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li.last a,
+  body #header #header-top #header-top-inner .region-header-top #block-menu-menu-header-top .content > ul > li.firstandlast a {
+    border-bottom: none;
+  }
+  body #header #header-top #header-top-inner .region-header-top #block-superfish-1 {
+    display: none;
+  }
+  body #header #header-middle {
+    margin-top: 0;
+  }
+  body #header #header-middle #header-middle-inner #block-block-5,
+  body #header #header-middle #header-middle-inner #block-block-6,
+  body #header #header-middle #header-middle-inner #block-block-7,
+  body #header #header-middle #header-middle-inner #block-views-sponsors-block {
+    width: 90%;
+    text-align: center;
+    float: none;
+  }
+  body #header #header-middle #header-middle-inner #block-block-4 {
+    background-size: 300px;
+    padding-top: 120px;
+    margin-top: 0;
+  }
+  body #header #header-middle #header-middle-inner #block-block-4 .content p {
+    font-size: 20px;
+  }
+  body #header #header-middle #header-middle-inner #block-block-4 .content p.bigtext {
+    font-size: 28px;
+  }
+  body #header #header-middle #header-middle-inner #block-block-4 .content #counter {
+    width: 90%;
+    font-size: 18px !important;
+  }
+  body #header #header-middle #header-middle-inner #block-block-5 {
+    line-height: 25px;
+    font-size: 20px;
+    text-shadow: none;
+    margin: 0 5% 40px;
+  }
+  body #header #header-middle #header-middle-inner #block-block-6,
+  body #header #header-middle #header-middle-inner #block-block-7 {
+    margin-left: 5%;
+  }
+  body #header #header-middle #header-middle-inner #block-block-6 .content p a,
+  body #header #header-middle #header-middle-inner #block-block-7 .content p a {
+    font-size: 20px;
+  }
+  body #header #header-middle #header-middle-inner #block-views-sponsors-block {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  body #header #header-middle #header-middle-inner #block-views-sponsors-block img {
+    padding-bottom: 20px;
+  }
+  body #header #header-middle #header-middle-inner #block-views-sponsors-block a {
+    line-height: 1;
+    height: auto;
+  }
+  body #footer #footer-inner #footer-bottom #block-views-leuven2013-sponsors-block-3 .view-leuven2013-sponsors .views-row {
+    width: 40%;
+    margin: 0 30% 20px;
+  }
+  body #footer #footer-inner #footer-bottom .sponsor-bronze-footer img {
+    -webkit-filter: none;
+    filter: none;
+  }
+  body #footer #footer-inner #footer-bottom .sponsor-bronze-footer img:hover {
+    -webkit-filter: none;
+    filter: none;
+  }
+  body.front #preface-wrapper h2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-program #page-wrapper h1#page-title {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-program #page-wrapper #main-wrapper #content {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-program #page-wrapper #main-wrapper #content .node-session {
+    width: 100%;
+    height: auto;
+    clear: both;
+  }
+  .page-program #page-wrapper #main-wrapper #content .tabs > ul li a {
+    font-size: 18px;
+  }
+  .page-program #page-wrapper #main-wrapper #content .view-sessions #filterbox {
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+  .page-program #page-wrapper #main-wrapper #content .view-sessions .view-filters .views-exposed-form .views-exposed-widget {
+    width: 96%;
+  }
+  .page-program #page-wrapper #main-wrapper #content .view-sessions .view-content .views-row {
+    width: 96%;
+    margin: 0 2% 30px;
+  }
+  .page-program #page-wrapper #main-wrapper #sidebar-second {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-program #page-wrapper #main-wrapper #sidebar-second .block {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #sidebar-second {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #sidebar-second .block {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-speakers #page-wrapper h1#page-title {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-speakers #page-wrapper #main-wrapper #content {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+  }
+  .page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping {
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-speakers #page-wrapper #main-wrapper #content .view-speakers .view-content > .view-grouping .view-grouping-content h3 {
+    font-size: 22px;
+  }
+  .page-speakers #page-wrapper #main-wrapper #sidebar-second {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-speakers #page-wrapper #main-wrapper #sidebar-second .block {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-community-attendees #page-wrapper #main-wrapper #content .view-attendees .views-row {
+    width: 47%;
+    margin: 0 1% 20px;
+  }
+  .page-community-attendees #page-wrapper #main-wrapper #sidebar-second {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-community-attendees #page-wrapper #main-wrapper #sidebar-second .block {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-user .region-content .user-profile .group-left {
+    width: 100%;
+  }
+  .page-user .region-content .user-profile .group-left .field-name-ds-user-picture {
+    text-align: center;
+  }
+  .page-user .region-content .user-profile .group-left .field-name-ds-user-picture img {
+    width: 100%;
+  }
+  .page-user .region-content .user-profile .group-right {
+    height: auto;
+    width: 100%;
+  }
+  .page-node-78 #main-wrapper .region-content #block-views-volunteers-block .view-volunteers .views-row {
+    width: 47%;
+  }
+  .page-node-112 #main-wrapper #content {
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+  .page-node-112 #main-wrapper #sidebar-second {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-node-112 #main-wrapper #sidebar-second .block {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-node-112 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right #routeplanAanvraagFormId .dl-border > fieldset {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .page-node-112 #main-wrapper #content #block-leuven2013-social-delijnapp .content .dl-wrapper .dl-col-right #routeplanAanvraagFormId .dl-border > .dl-icon-swap {
+    width: 100%;
+    background-position: center center;
+    margin-right: 0;
+    margin-top: 15px;
+    behavior: url(-ms-transform.htc);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+  }
+  .page-program #page-wrapper #main-wrapper #content,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content {
+    width: 90%;
+  }
+  .page-program #page-wrapper #main-wrapper #content h1.title,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content h1.title {
+    width: 100%;
+  }
+  .page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle {
+    position: relative;
+  }
+  .page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-flag,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-flag {
+    position: relative;
+    right: auto;
+    top: auto;
+    margin-bottom: 10px;
+  }
+  .page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-flag a,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-flag a {
+    padding-left: 16px;
+  }
+  .page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-flag a.flag-action,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-flag a.flag-action {
+    background: url(../images/add.png) no-repeat left center;
+  }
+  .page-program #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-flag a.unflag-action,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-middle .field-name-flag a.unflag-action {
+    background: url(../images/remove.png) no-repeat left center;
+  }
+  .page-program #page-wrapper #main-wrapper #content .ds-3col .group-right,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-right {
+    width: 10%;
+  }
+  .page-program #page-wrapper #main-wrapper #content .ds-3col .group-right .field-name-session-room,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-right .field-name-session-room {
+    height: 200px;
+  }
+  .page-program #page-wrapper #main-wrapper #content .ds-3col .group-right h2,
+  .page-taxonomy-term #page-wrapper #main-wrapper #content .ds-3col .group-right h2 {
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    width: 204px;
+    height: 200px;
+    behavior: url(-ms-transform.htc);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+  }
+}
+/**
+ * @file
+ * Styling for the ds-3col template.
+ */
+.ds-3col > .group-left {
+  width: 25%;
+  float: left;
+  /* LTR */
+}
+.ds-3col > .group-middle {
+  width: 50%;
+  float: left;
+  /* LTR */
+}
+.ds-3col > .group-right {
+  width: 25%;
+  float: right;
+  /* LTR */
+}
+.dl-border {
+  overflow: hidden;
+  clear: both;
+}
+#cntdwn {
+  display: none;
+}
