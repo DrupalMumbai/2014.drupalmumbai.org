@@ -148,7 +148,7 @@ function entity_views_table_definition($type, $exclude = TRUE) {
       'entity type' => $type,
     );
     foreach (entity_get_all_property_info($type) as $key => $property) {
-      if (!$exclude && !empty($property['entity views field'])) {
+      if (!$exclude || empty($property['entity views field'])) {
         entity_views_field_definition($key, $property, $tables[$type]);
       }
     }
@@ -379,6 +379,7 @@ class EntityDefaultViewsController {
       $label = isset($this->info['plural label']) ? $this->info['plural label'] : $this->info['label'];
       $data[$table]['table']['base'] = array(
         'field' => $this->info['entity keys']['id'],
+        'access query tag' => $this->type . '_access',
         'title' => drupal_ucfirst($label),
         'help' => isset($this->info['description']) ? $this->info['description'] : '',
       );
