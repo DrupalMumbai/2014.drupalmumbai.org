@@ -13,11 +13,10 @@ function _leuven2013_social_block_social_sidebar() {
   $url = drupal_parse_url('https://groups.drupal.org/node/359178');
   $drupalorg = l('Drupal.org', $url['path'], array('external' => TRUE, 'attributes' => array('target'=>'_blank')));
 
-  $url = drupal_parse_url('https://plus.google.com/118329229193665724562/posts');
+  $url = drupal_parse_url('http://gplus.to/DrupalMumbai');
   $googleplus = l('Google+', $url['path'], array('external' => TRUE, 'attributes' => array('target'=>'_blank')));
 
   $block = array(
-    // 'subject' => t('Social Media'),
     'subject' => '',
     'content' =>  '<div class="social-icon icon-twitter">' . $twitter . '</div> <div class="social-icon icon-facebook">' . $facebook . '</div><div class="social-icon icon-googleplus">' . $googleplus . '</div><div class="social-icon icon-drupalorg">' . $drupalorg . '</div>',
   );
