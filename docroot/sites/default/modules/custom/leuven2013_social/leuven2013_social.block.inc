@@ -4,7 +4,7 @@
  */
 function _leuven2013_social_block_social_sidebar() {
   drupal_add_css(drupal_get_path('module', 'leuven2013_social') . '/css/social.css');
-  $url = drupal_parse_url('http://twitter.com/drupalcampmum');
+  $url = drupal_parse_url('https://twitter.com/DrupalMumbai');
   $twitter = l('Twitter', $url['path'], array('external' => TRUE, 'attributes' => array('target'=>'_blank')));
 
   $url = drupal_parse_url('http://fb.me/DrupalMumbai');
