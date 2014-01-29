@@ -19,8 +19,6 @@ function leuven2013_sponsors_menu() {
   $items['sponsorship/%taxonomy_term/apply'] = array(
     'page callback' => 'leuven2013_sponsors_view',
     'page arguments' => array(1),
-    // 'page callback' => 'drupal_goto',
-    // 'page arguments' => array('mailto:info@drupalcampleuven.be?subject=Interest in DrupalCamp sponsorship ' . ),
     'access callback' => TRUE,
   );
   return $items;
@@ -30,7 +28,7 @@ function leuven2013_sponsors_menu() {
  * Menu callback sponsors overview page.
  */
 function leuven2013_sponsors_overview() {
-  return '<p>DrupalCamp Leuven 2013 is organized by DUG BE VZW (Drupal User Group Belgium). We are a non-profit organization and our events are run by volunteers. Still we do need sponsors to keep the event free for the Drupal community. Your sponsorship fee will pay for the location, catering, publicity, ...</p>
+  return '<p>DrupalCamp Mumbai 2013 is organized by Drupal Mumbai User Group. We are a non-profit organization and our events are run by volunteers. Still we do need sponsors to keep the event free for the Drupal community. Your sponsorship fee will pay for the location, catering, publicity, ...</p>
     <p>We offer five sponsor ship packages that can be tailored to suit your needs.</p>';
 }
 
@@ -42,6 +40,6 @@ function leuven2013_sponsors_view($term) {
     return 'No such sponsorship level found';
   }
   else {
-    drupal_goto('mailto:info@drupalcampleuven.be?subject=Interest in DrupalCamp ' . $term->name . ' sponsorship&body=<Please insert your company details here>');
+    drupal_goto('mailto:info@drupalcampmumbai.org?subject=Interest in DrupalCamp ' . $term->name . ' sponsorship&body=<Please insert your company details here>');
   }
 }
