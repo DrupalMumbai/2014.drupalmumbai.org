@@ -137,6 +137,3 @@ DirectoryIndex index.php index.html index.htm
     </FilesMatch>
   </IfModule>
 </IfModule>
-
-# Increase memory
-php_value memory_limit 384M
