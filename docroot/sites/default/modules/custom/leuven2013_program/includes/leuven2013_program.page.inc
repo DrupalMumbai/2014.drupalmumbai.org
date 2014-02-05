@@ -129,11 +129,11 @@ function _leuven2013_program_page_get_content($day, $timeslot, $favorite) {
   // The session is frikkin related to one day (gid) and still sessions from other days appear RAAAARRARRARARARARA;;;;
   switch ($day) {
     case 13:
-      $date_day = '2013-09-15';
+      $date_day = '2014-02-08';
       break;
     case 1:
     default:
-      $date_day = '2013-09-14';
+      $date_day = '2013-02-09';
   }
 
   $date_timeslot = date('Y-m-d', strtotime($timeslot));
