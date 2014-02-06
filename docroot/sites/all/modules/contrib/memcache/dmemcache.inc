@@ -35,7 +35,9 @@ $_memcache_statistics = array();
 function dmemcache_set($key, $value, $exp = 0, $bin = 'cache', $mc = NULL) {
   global $_memcache_statistics;
   $full_key = dmemcache_key($key, $bin);
-  $_memcache_statistics[] = array('set', $bin, $full_key, '');
+  if (dmemcache_collect_stats()) {
+    $_memcache_statistics[] = array('set', $bin, $full_key, '');
+  }
   if ($mc || ($mc = dmemcache_object($bin))) {
     if ($mc instanceof Memcached) {
       return $mc->set($full_key, $value, $exp);
@@ -71,7 +73,9 @@ function dmemcache_set($key, $value, $exp = 0, $bin = 'cache', $mc = NULL) {
 function dmemcache_add($key, $value, $exp = 0, $bin = 'cache', $mc = NULL, $flag = FALSE) {
   global $_memcache_statistics;
   $full_key = dmemcache_key($key, $bin);
-  $_memcache_statistics[] = array('add', $bin, $full_key, '');
+  if (dmemcache_collect_stats()) {
+    $_memcache_statistics[] = array('add', $bin, $full_key, '');
+  }
   if ($mc || ($mc = dmemcache_object($bin))) {
     if ($mc instanceof Memcached) {
       return $mc->add($full_key, $value, $exp);
@@ -102,8 +106,10 @@ function dmemcache_get($key, $bin = 'cache', $mc = NULL) {
     $php_errormsg = '';
 
     $result = @$mc->get($full_key);
-    $statistics[] = (bool) $result;
-    $_memcache_statistics[] = $statistics;
+    if (dmemcache_collect_stats()) {
+      $statistics[] = (bool) $result;
+      $_memcache_statistics[] = $statistics;
+    }
 
     if (!empty($php_errormsg)) {
       register_shutdown_function('watchdog', 'memcache', 'Exception caught in dmemcache_get: !msg', array('!msg' => $php_errormsg), WATCHDOG_WARNING);
@@ -129,7 +135,9 @@ function dmemcache_get_multi($keys, $bin = 'cache', $mc = NULL) {
   $statistics = array();
   foreach ($keys as $key => $cid) {
     $full_key = dmemcache_key($cid, $bin);
-    $statistics[$full_key] = array('getMulti', $bin, $full_key);
+    if (dmemcache_collect_stats()) {
+      $statistics[$full_key] = array('getMulti', $bin, $full_key);
+    }
     $full_keys[$cid] = $full_key;
   }
   $results = array();
@@ -150,9 +158,11 @@ function dmemcache_get_multi($keys, $bin = 'cache', $mc = NULL) {
       ini_set('track_errors', $track_errors);
     }
   }
-  foreach ($statistics as $key => $values) {
-    $values[] = isset($results[$key]) ? '1': '0';
-    $_memcache_statistics[] = $values;
+  if (dmemcache_collect_stats()) {
+    foreach ($statistics as $key => $values) {
+      $values[] = isset($results[$key]) ? '1': '0';
+      $_memcache_statistics[] = $values;
+    }
   }
 
   // If $results is FALSE, convert it to an empty array.
@@ -180,7 +190,9 @@ function dmemcache_get_multi($keys, $bin = 'cache', $mc = NULL) {
 function dmemcache_delete($key, $bin = 'cache', $mc = NULL) {
   global $_memcache_statistics;
   $full_key = dmemcache_key($key, $bin);
-  $_memcache_statistics[] = array('delete', $bin, $full_key, '');
+  if (dmemcache_collect_stats()) {
+    $_memcache_statistics[] = array('delete', $bin, $full_key, '');
+  }
   if ($mc || ($mc = dmemcache_object($bin))) {
     return $mc->delete($full_key, 0);
   }
@@ -199,7 +211,9 @@ function dmemcache_delete($key, $bin = 'cache', $mc = NULL) {
  */
 function dmemcache_flush($bin = 'cache', $mc = NULL) {
   global $_memcache_statistics;
-  $_memcache_statistics[] = array('flush', $bin, '', '');
+  if (dmemcache_collect_stats()) {
+    $_memcache_statistics[] = array('flush', $bin, '', '');
+  }
   if ($mc || ($mc = dmemcache_object($bin))) {
     return memcache_flush($mc);
   }
@@ -365,16 +379,15 @@ function dmemcache_object($bin = NULL, $flush = FALSE) {
         if ($c == $cluster && !isset($failed_connection_cache[$s])) {
           list($host, $port) = explode(':', $s);
 
-          // Support unix sockets in the format 'unix:///path/to/socket'.
-          if ($host == 'unix') {
-            // When using unix sockets use the full path for $host.
-            $host = $s;
-            // Port is always 0 for unix sockets.
-            $port = 0;
-          }
-
           // Using the Memcache PECL extension.
           if ($memcache instanceof Memcache) {
+            // Support unix sockets in the format 'unix:///path/to/socket'.
+            if ($host == 'unix') {
+              // When using unix sockets with Memcache use the full path for $host.
+              $host = $s;
+              // Port is always 0 for unix sockets.
+              $port = 0;
+            }
             // When using the PECL memcache extension, we must use ->(p)connect
             // for the first connection.
             if (!$init) {
@@ -398,21 +411,24 @@ function dmemcache_object($bin = NULL, $flush = FALSE) {
               $memcache->addServer($host, $port, $memcache_persistent);
             }
           }
-          else if ($memcache->addServer($host, $port) && !$init) {
-            $init = TRUE;
+          else {
+            // Support unix sockets in the format 'unix:///path/to/socket'.
+            if ($host == 'unix') {
+              // Memcached expects just the path to the socket without the protocol
+              $host = substr($s, 7);
+              // Port is always 0 for unix sockets.
+              $port = 0;
+            }
+            if ($memcache->addServer($host, $port) && !$init) {
+              $init = TRUE;
+            }
           }
 
           if (!$init) {
-            // Ensure we use an available t() function.
-            $t = get_t();
-            $error_msg = $t(
-              'Failed to connect to memcache server: %server',
-              array('%server' => $s)
-            );
             // We can't use watchdog because this happens in a bootstrap phase
-            // where watchdog is non-functional. Thus use trigger_error() to
-            // start drupal_error_handler().
-            trigger_error($error_msg, E_USER_ERROR);
+            // where watchdog is non-functional. Register a shutdown handler
+            // instead so it gets recorded at the end of page load.
+            register_shutdown_function('watchdog', 'memcache', 'Failed to connect to memcache server: !server', array('!server' => $s), WATCHDOG_ERROR);
             $failed_connection_cache[$s] = FALSE;
           }
         }
@@ -450,11 +466,42 @@ function dmemcache_key($key, $bin = 'cache') {
   $full_key = urlencode($prefix . $bin . '-' . $key);
 
   // Memcache only supports key lengths up to 250 bytes.  If we have generated
-  // a longer key, hash it with sha1 which will shrink the key down to 40 bytes
-  // while still keeping it unique.
+  // a longer key, we shrink it to an acceptible length with a configurable
+  // hashing algorithm. Sha1 was selected as the default as it performs
+  // quickly with minimal collisions.
   if (strlen($full_key) > 250) {
-    $full_key = $prefix . $bin . '-' . sha1($key);
+    $full_key = urlencode(hash(variable_get('memcache_key_hash_algorithm', 'sha1'), $prefix . $bin . '-' . $key));
   }
 
   return $full_key;
+}
+
+
+/**
+ * Checks whether memcache stats need to be collected.
+ */
+function dmemcache_collect_stats() {
+  global $user;
+  static $drupal_static_fast;
+  if (!isset($drupal_static_fast)) {
+    $drupal_static_fast = &drupal_static(__FUNCTION__, array('variable_checked' => NULL, 'user_access_checked' => NULL));
+  }
+  $variable_checked = &$drupal_static_fast['variable_checked'];
+  $user_access_checked  = &$drupal_static_fast['user_access_checked'];
+
+  // Confirm DRUPAL_BOOTSTRAP_VARIABLES has been reached. We don't use
+  // drupal_get_bootstrap_phase() as it's buggy. We can use variable_get()
+  // here because _drupal_bootstrap_variables() includes module.inc
+  // immediately after it calls variable_initialize().
+  if (!isset($variable_checked) && function_exists('module_list')) {
+    $variable_checked = variable_get('show_memcache_statistics', FALSE);
+  }
+  // If statistics are enabled we need to check user access.
+  if (!empty($variable_checked) && !isset($user_access_checked) && !empty($user) && function_exists('user_access')) {
+    // Statistics are enabled and the $user object has been populated, so check
+    // that the user has access to view them.
+    $user_access_checked = user_access('access memcache statistics');
+  }
+  // Return whether or not statistics are enabled and the user can access them.
+  return (!isset($variable_checked) || $variable_checked) && (!isset($user_access_checked) || $user_access_checked);
 }

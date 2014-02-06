@@ -16,6 +16,27 @@ class MemCacheDrupal implements DrupalCacheInterface {
     $this->memcache = dmemcache_object($bin);
     $this->bin = $bin;
 
+    // If page_cache_without_database is enabled, we have to manually load the
+    // $conf array out of cache_bootstrap.
+    static $variables_loaded = FALSE;
+    if (!empty($GLOBALS['conf']['page_cache_without_database']) && !$variables_loaded) {
+      global $conf;
+      $variables_loaded = TRUE;
+      // Try loading variables from cache. If that fails, we have to bootstrap
+      // further in order to fetch them.
+      if ($cached = cache_get('variables', 'cache_bootstrap')) {
+        $variables = $cached->data;
+        // Make sure variable overrides are applied, see variable_initialize().
+        foreach ($conf as $name => $value) {
+          $variables[$name] = $value;
+        }
+        $conf = $variables;
+      }
+      else {
+        drupal_bootstrap(DRUPAL_BOOTSTRAP_VARIABLES, FALSE);
+      }
+    }
+
     $this->reloadVariables();
   }
 
@@ -27,7 +48,7 @@ class MemCacheDrupal implements DrupalCacheInterface {
   function getMultiple(&$cids) {
     $results = dmemcache_get_multi($cids, $this->bin, $this->memcache);
     foreach ($results as $cid => $result) {
-      if (!$this->valid($result->cid, $result)) {
+      if (!$this->valid($cid, $result)) {
         // This object has expired, so don't return it.
         unset($results[$cid]);
       }
@@ -62,7 +83,7 @@ class MemCacheDrupal implements DrupalCacheInterface {
       }
       // Items created before the last full wildcard flush against this bin are
       // invalid.
-      elseif ($cache->created <= $this->cache_flush) {
+      elseif (!isset($cache->created) || $cache->created <= $this->cache_flush) {
         $cache = FALSE;
       }
       // Items created before the last content flush on this bin i.e.
@@ -112,7 +133,7 @@ class MemCacheDrupal implements DrupalCacheInterface {
     return (bool) $cache;
   }
 
-  function set($cid, $data, $expire = CACHE_PERMANENT, array $headers = NULL) {
+  function set($cid, $data, $expire = CACHE_PERMANENT) {
     $created = time();
 
     // Create new cache object.
@@ -120,7 +141,6 @@ class MemCacheDrupal implements DrupalCacheInterface {
     $cache->cid = $cid;
     $cache->data = is_object($data) ? clone $data : $data;
     $cache->created = $created;
-    $cache->headers = $headers;
     // Record the previous number of wildcard flushes affecting our cid.
     $cache->flushes = $this->wildcard_flushes($cid);
     if ($expire == CACHE_TEMPORARY) {
@@ -138,11 +158,19 @@ class MemCacheDrupal implements DrupalCacheInterface {
       $cache->expire = $expire;
     }
 
-    // We manually track the expire time in $cache->expire.  When the object
-    // expires, we only allow one request to rebuild it to avoid cache
-    // stampedes. Other requests for the expired object while it is still being
-    // rebuilt get the expired object.
-    dmemcache_set($cid, $cache, 0, $this->bin, $this->memcache);
+    // Manually track the expire time in $cache->expire.  When the object
+    // expires, if stampede protection is enabled, it may be served while one
+    // process rebuilds it. The ttl sent to memcache is set to the expire twice
+    // as long into the future, this allows old items to be expired by memcache
+    // rather than evicted along with a sufficient period for stampede
+    // protection to continue to work.
+    if ($cache->expire == CACHE_PERMANENT) {
+      $memcache_expire = $cache->expire;
+    }
+    else {
+      $memcache_expire = $cache->expire + (($cache->expire - REQUEST_TIME) * 2);
+    }
+    dmemcache_set($cid, $cache, $memcache_expire, $this->bin, $this->memcache);
   }
 
   function clear($cid = NULL, $wildcard = FALSE) {

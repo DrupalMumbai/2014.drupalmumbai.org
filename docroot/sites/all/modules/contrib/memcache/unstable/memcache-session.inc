@@ -113,8 +113,9 @@ function _drupal_session_write($key, $value) {
     dmemcache_set($key, $session, ini_get('session.gc_maxlifetime'), 'session');
     if ($user->uid && $session->timestamp - $user->access > variable_get('session_write_interval', 360)) {
       db_update('users')
-        ->fields(array('access' => $user->uid))
-        ->condition(array('uid' => $user->uid));
+        ->fields(array('access' => $session->timestamp))
+        ->condition('uid', $user->uid)
+        ->execute();
       // Update the user access time so that the dmemcache_set() call
       // caches the updated time.
       $user->access = $session->timestamp;
@@ -186,6 +187,7 @@ function drupal_session_initialize() {
     $user = drupal_anonymous_user();
     session_id(md5(uniqid('', TRUE)));
   }
+  date_default_timezone_set(drupal_get_user_timezone());
 }
 
 
@@ -287,6 +289,7 @@ function drupal_session_regenerate() {
     // Clear the old data from the cache.
     dmemcache_delete($old_session_id, 'session');
   }
+  date_default_timezone_set(drupal_get_user_timezone());
 }
 
 
@@ -342,7 +345,8 @@ function _memcache_session_user_load($session) {
       $user = db_query('SELECT u.* FROM {users} u WHERE u.uid = :uid', array('uid' => $session->uid))->fetchObject();
 
       if (!$user->status) {
-        $user = drupal_anonymous_user($session->session);
+        $user = drupal_anonymous_user();
+        $user->session = empty($session->session) ? '' : $session->session;
       }
       else {
         $user = drupal_unpack($user);
@@ -353,6 +357,7 @@ function _memcache_session_user_load($session) {
         $user->hostname = $session->hostname;
         $user->timestamp = $session->timestamp;
         $user->session = empty($session->session) ? '' : $session->session;
+        $user->data = unserialize($user->data);
 
         // Add roles element to $user
         $user->roles = array();
@@ -376,14 +381,15 @@ function _memcache_session_user_load($session) {
       // comment in:
       // This is a rare case that we have a session cached, but no session user object cached.
       // This usually only happens if you kill memcached and restart it.
-      $user = drupal_anonymous_user($session->session);
+      $user = drupal_anonymous_user();
+      $user->session = empty($session->session) ? '' : $session->session;
     }
   }
   // We didn't find the client's record (session has expired), or they are an
   // anonymous user.
-  else  {
-    $session = isset($session->session) ? $session->session : '';
-    $user = drupal_anonymous_user($session);
+  else {
+    $user = drupal_anonymous_user();
+    $user->session = empty($session->session) ? '' : $session->session;
   }
 
   return $user;
