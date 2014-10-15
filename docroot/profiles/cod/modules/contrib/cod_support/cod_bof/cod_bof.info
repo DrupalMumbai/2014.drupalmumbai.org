@@ -1,15 +1,20 @@
 name = COD BoF Session
-description = BoFs are self-scheduled, unconference style sessions
+description = Self-scheduled, unconference style sessions (BoFs)
 core = 7.x
 package = COD
+dependencies[] = cod_schedule
 dependencies[] = cod_session
-dependencies[] = cod_wysiwyg
+dependencies[] = ctools
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = field_group
+dependencies[] = node
+dependencies[] = og
 dependencies[] = og_ui
 dependencies[] = options
+dependencies[] = quicktabs
 dependencies[] = strongarm
+dependencies[] = text
 dependencies[] = views
 dependencies[] = views_field_view
 features[ctools][] = field_group:field_group:1
@@ -26,6 +31,7 @@ features[user_permission][] = delete any bof_session content
 features[user_permission][] = delete own bof_session content
 features[user_permission][] = edit any bof_session content
 features[user_permission][] = edit own bof_session content
+features[user_permission][] = view bofs
 features[variable][] = cod_unique_bof_session
 features[variable][] = comment_anonymous_bof_session
 features[variable][] = comment_bof_session
@@ -42,12 +48,15 @@ features[variable][] = menu_parent_bof_session
 features[variable][] = node_options_bof_session
 features[variable][] = node_preview_bof_session
 features[variable][] = node_submitted_bof_session
+features[variable][] = pathauto_node_bof_session_pattern
 features[views_view][] = cod_bof_schedule
-features[views_view][] = cod_bof_schedule_entity
+features[views_view][] = cod_bof_schedule_content
+features[views_view][] = cod_bof_schedule_timeslots
+install_option = cod
 
-; Information added by  packaging script on 2013-11-21
-version = "7.x-1.0-alpha4"
+; Information added by Drupal.org packaging script on 2014-09-05
+version = "7.x-1.0-beta3"
 core = "7.x"
 project = "cod_support"
-datestamp = "1385019088"
+datestamp = "1409957334"
 

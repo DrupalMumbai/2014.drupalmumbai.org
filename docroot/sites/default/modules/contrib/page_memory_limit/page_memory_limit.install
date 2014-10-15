@@ -1,13 +1,6 @@
 <?php
 
 /**
- * Implements hook_install().
- */
-function hook_install() {
-  variable_set('page_memory_limit','384M');
-}
-
-/**
  * Implements hook_uninstall().
  */
 function page_memory_limit_uninstall() {

@@ -45,7 +45,7 @@ function cod_bof_field_default_field_instances() {
     'label' => 'Description',
     'required' => 0,
     'settings' => array(
-      'display_summary' => 1,
+      'display_summary' => 0,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -141,7 +141,7 @@ function cod_bof_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'og_group_ref',
-    'label' => 'Groups audience',
+    'label' => 'Event',
     'required' => FALSE,
     'settings' => array(
       'behaviors' => array(
@@ -180,7 +180,7 @@ function cod_bof_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Description');
-  t('Groups audience');
+  t('Event');
   t('Session Time Slot(s)');
 
   return $field_instances;
